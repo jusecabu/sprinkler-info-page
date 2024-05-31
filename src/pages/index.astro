@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import irrigationSystem from '../assets/images/sistema_riego.jpg';
 import goals from '../assets/images/objetivos.jpg';
+import aplicability from '../assets/images/aplicabilidad.jpg';
 ---
 
 <Layout title="Sistem a de riego automatico">
@@ -9,6 +10,9 @@ import goals from '../assets/images/objetivos.jpg';
         <nav class="mx-auto flex justify-center w-full max-w-screen-lg gap-8">
             <a href="/#info" class="uppercase hover:underline">¿Qué es?</a>
             <a href="/#goals" class="uppercase hover:underline">Objetivos</a>
+            <a href="/#applicability" class="uppercase hover:underline"
+                >Aplicabilidad</a
+            >
         </nav>
     </header>
     <main class="mx-auto max-w-screen-lg">
@@ -60,31 +64,31 @@ import goals from '../assets/images/objetivos.jpg';
                 class="w-full rounded-lg mt-8"
             />
         </section>
-        <section id="info" class="p-10 bg-[#161616] rounded-lg mb-10">
-            <h2 class="font-nippo text-4xl mb-8">
-                ¿Qué es un sistema de riego automático?
-            </h2>
-            <p class="font-boska text-2xl">
-                Es un dispositivo de riego automatizado que utiliza sensores de
-                humedad para identificar los momentos óptimos para el riego,
-                reduciendo la intervención humana y los costos. La investigación
-                mejorará la eficiencia del uso del agua, evitando tanto la
-                sub-irrigación como la sobre-irrigación, lo que resultará en un
-                ahorro significativo de agua.
-            </p>
-        </section>
-        <section id="info" class="p-10 bg-[#161616] rounded-lg mb-10">
-            <h2 class="font-nippo text-4xl mb-8">
-                ¿Qué es un sistema de riego automático?
-            </h2>
-            <p class="font-boska text-2xl">
-                Es un dispositivo de riego automatizado que utiliza sensores de
-                humedad para identificar los momentos óptimos para el riego,
-                reduciendo la intervención humana y los costos. La investigación
-                mejorará la eficiencia del uso del agua, evitando tanto la
-                sub-irrigación como la sobre-irrigación, lo que resultará en un
-                ahorro significativo de agua.
-            </p>
+        <section id="applicability" class="p-10 bg-[#161616] rounded-lg mb-10">
+            <h2 class="font-nippo text-4xl mb-8">Aplicabilidad</h2>
+            <ul class="list-disc font-boska text-2xl space-y-1 list-inside">
+                <li>
+                    Los sistemas de riego automático son compatibles con
+                    diversos tipos de emisores, como aspersores, microaspersores
+                    y sistemas de goteo. Esto los hace adaptables a diferentes
+                    tipos de cultivos y configuraciones de terreno.
+                </li>
+                <li>
+                    La automatización del riego elimina la necesidad de regar
+                    manualmente, ahorrando tiempo y esfuerzo a agricultores y
+                    jardineros.
+                </li>
+                <li>
+                    Permiten un uso más eficiente del agua, reduciendo el
+                    desperdicio y asegurando que las plantas reciban la cantidad
+                    exacta que necesitan.
+                </li>
+            </ul>
+            <img
+                src={aplicability.src}
+                alt="Objetivos"
+                class="w-full rounded-lg mt-8"
+            />
         </section>
     </main>
 </Layout>
